@@ -1,6 +1,6 @@
 package school;
 
-public class student {
+public class Student {
 
     private PersonalIdentification personalIdentification;
     private String name;

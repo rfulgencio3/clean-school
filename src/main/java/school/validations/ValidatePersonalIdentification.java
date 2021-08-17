@@ -1,10 +1,10 @@
-package school;
+package school.validations;
 
 import java.util.InputMismatchException;
 
 public class ValidatePersonalIdentification {
 
-    public static boolean validatePersonalIdentification(String personalIdentification) {
+    public static boolean isValidPersonalIdentification(String personalIdentification) {
         if (personalIdentification.equals("00000000000") ||
                 personalIdentification.equals("11111111111") ||
                 personalIdentification.equals("22222222222") || personalIdentification.equals("33333333333") ||
