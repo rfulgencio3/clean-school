@@ -1,10 +1,10 @@
-package school;
+package school.validations;
 
 import java.util.InputMismatchException;
 
 public class ValidatePersonalIdentification {
 
-    public static boolean validatePersonalIdentification(String personalIdentification) {
+    public static boolean isValidPersonalIdentification(String personalIdentification) {
         if (personalIdentification.equals("00000000000") ||
                 personalIdentification.equals("11111111111") ||
                 personalIdentification.equals("22222222222") || personalIdentification.equals("33333333333") ||
@@ -53,7 +53,10 @@ public class ValidatePersonalIdentification {
     }
 
     public static String formatPersonalIdentification(String personalIdentification) {
-        return(personalIdentification.substring(0, 3) + "." + personalIdentification.substring(3, 6) + "." +
-                personalIdentification.substring(6, 9) + "-" + personalIdentification.substring(9, 11));
+        if(personalIdentification.length() == 11){
+        return (personalIdentification.substring(0, 3) + "." + personalIdentification.substring(3, 6) + "." +
+                    personalIdentification.substring(6, 9) + "-" + personalIdentification.substring(9, 11));
+        }
+        throw new IllegalArgumentException("Invalid personal identification format.");
     }
 }
