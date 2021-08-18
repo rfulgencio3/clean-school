@@ -1,6 +1,6 @@
-package school;
+package br.com.cleanschool.domain.utils;
 
-import school.validations.ValidatePersonalIdentification;
+import br.com.cleanschool.domain.utils.validations.ValidatePersonalIdentification;
 
 public class PersonalIdentification {
     private String personalCode;

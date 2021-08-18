@@ -1,4 +1,7 @@
-package school;
+package br.com.cleanschool.domain.student;
+
+import br.com.cleanschool.domain.utils.Email;
+import br.com.cleanschool.domain.utils.PersonalIdentification;
 
 public class StudentBuilder {
 

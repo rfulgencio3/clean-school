@@ -1,6 +1,6 @@
-package school;
+package br.com.cleanschool.domain.utils;
 
-import school.validations.ValidateEmail;
+import br.com.cleanschool.domain.utils.validations.ValidateEmail;
 
 public class Email {
     private String emailAddress;

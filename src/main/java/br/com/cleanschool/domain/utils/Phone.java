@@ -1,7 +1,6 @@
-package school;
+package br.com.cleanschool.domain.utils;
 
-import school.validations.ValidatePersonalIdentification;
-import school.validations.ValidatePhone;
+import br.com.cleanschool.domain.utils.validations.ValidatePhone;
 
 public class Phone {
 

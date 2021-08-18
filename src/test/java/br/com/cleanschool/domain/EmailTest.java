@@ -1,7 +1,8 @@
-package school;
+package br.com.cleanschool.domain;
 
+import br.com.cleanschool.domain.utils.Email;
+import br.com.cleanschool.domain.utils.validations.ValidateEmail;
 import org.junit.jupiter.api.Test;
-import school.validations.ValidateEmail;
 
 import static org.junit.jupiter.api.Assertions.*;
 

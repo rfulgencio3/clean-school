@@ -1,4 +1,8 @@
-package school;
+package br.com.cleanschool.domain.student;
+
+import br.com.cleanschool.domain.utils.Email;
+import br.com.cleanschool.domain.utils.PersonalIdentification;
+import br.com.cleanschool.domain.utils.Phone;
 
 import java.util.ArrayList;
 import java.util.List;
