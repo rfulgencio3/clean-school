@@ -53,7 +53,10 @@ public class ValidatePersonalIdentification {
     }
 
     public static String formatPersonalIdentification(String personalIdentification) {
-        return(personalIdentification.substring(0, 3) + "." + personalIdentification.substring(3, 6) + "." +
-                personalIdentification.substring(6, 9) + "-" + personalIdentification.substring(9, 11));
+        if(personalIdentification.length() == 11){
+        return (personalIdentification.substring(0, 3) + "." + personalIdentification.substring(3, 6) + "." +
+                    personalIdentification.substring(6, 9) + "-" + personalIdentification.substring(9, 11));
+        }
+        throw new IllegalArgumentException("Invalid personal identification format.");
     }
 }
