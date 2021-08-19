@@ -12,4 +12,12 @@ public class PersonalIdentification {
         }
         this.personalCode=personalCode;
     }
+
+    public String getPersonalCode() {
+        return personalCode;
+    }
+
+    public void setPersonalCode(String personalCode) {
+        this.personalCode=personalCode;
+    }
 }

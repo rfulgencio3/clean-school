@@ -15,4 +15,12 @@ public class Phone {
         this.phonePrefix = phonePrefix;
         this.phoneNumber = phoneNumber;
     }
+
+    public String getPhonePrefix() {
+        return this.phonePrefix;
+    }
+
+    public String getPhoneNumber() {
+        return this.phoneNumber;
+    }
 }
