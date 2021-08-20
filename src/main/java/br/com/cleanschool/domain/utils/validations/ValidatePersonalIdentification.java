@@ -1,5 +1,8 @@
 package br.com.cleanschool.domain.utils.validations;
 
+import br.com.cleanschool.domain.utils.exceptions.CustomExceptions;
+import br.com.cleanschool.domain.utils.exceptions.enums.ErrorCodes;
+
 import java.util.InputMismatchException;
 
 public class ValidatePersonalIdentification {
@@ -57,6 +60,6 @@ public class ValidatePersonalIdentification {
         return (personalIdentification.substring(0, 3) + "." + personalIdentification.substring(3, 6) + "." +
                     personalIdentification.substring(6, 9) + "-" + personalIdentification.substring(9, 11));
         }
-        throw new IllegalArgumentException("Invalid personal identification format.");
+        throw new CustomExceptions(ErrorCodes.INVALID_PERSONAL_IDENTIFICATION_FORMAT, "Invalid personal identification format.");
     }
 }

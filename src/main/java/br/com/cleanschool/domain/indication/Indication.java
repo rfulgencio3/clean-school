@@ -5,6 +5,7 @@ import br.com.cleanschool.domain.student.Student;
 import java.time.LocalDateTime;
 
 public class Indication {
+
     private Student indicated;
     private Student indicator;
     private LocalDateTime indicationDate;
