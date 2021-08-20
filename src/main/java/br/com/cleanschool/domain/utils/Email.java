@@ -1,6 +1,6 @@
-package school;
+package br.com.cleanschool.domain.utils;
 
-import school.validations.ValidateEmail;
+import br.com.cleanschool.domain.utils.validations.ValidateEmail;
 
 public class Email {
     private String emailAddress;
@@ -10,5 +10,9 @@ public class Email {
             throw new IllegalArgumentException("Invalid e-mail address.");
         }
         this.emailAddress = emailAddress;
+    }
+
+    public String getEmail() {
+        return this.emailAddress;
     }
 }

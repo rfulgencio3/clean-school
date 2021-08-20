@@ -1,4 +1,8 @@
-package school;
+package br.com.cleanschool.domain.student;
+
+import br.com.cleanschool.domain.utils.Email;
+import br.com.cleanschool.domain.utils.PersonalIdentification;
+import br.com.cleanschool.domain.utils.Phone;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,15 +24,20 @@ public class Student {
         this.phones.add(new Phone(phonePrefix, phoneNumber));
     }
 
-    public PersonalIdentification getPersonalIdentification() {
-        return personalIdentification;
+    public String getPersonalIdentification() {
+        return personalIdentification.getPersonalCode();
     }
 
     public String getName() {
         return name;
     }
 
-    public Email getEmail() {
-        return email;
+    public String getEmail() {
+
+        return email.getEmail();
+    }
+
+    public List<Phone> getPhones() {
+        return phones;
     }
 }

@@ -1,6 +1,6 @@
-package school;
+package br.com.cleanschool.domain.utils;
 
-import school.validations.ValidatePersonalIdentification;
+import br.com.cleanschool.domain.utils.validations.ValidatePersonalIdentification;
 
 public class PersonalIdentification {
     private String personalCode;
@@ -10,6 +10,14 @@ public class PersonalIdentification {
                 !ValidatePersonalIdentification.isValidPersonalIdentification(personalCode)){
             throw new IllegalArgumentException("Invalid personal identification/code.");
         }
+        this.personalCode=personalCode;
+    }
+
+    public String getPersonalCode() {
+        return personalCode;
+    }
+
+    public void setPersonalCode(String personalCode) {
         this.personalCode=personalCode;
     }
 }

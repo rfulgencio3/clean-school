@@ -1,4 +1,4 @@
-package school.validations;
+package br.com.cleanschool.domain.utils.validations;
 
 public class ValidatePhone {
     public static boolean isValidPhone(String phonePrefix, String phoneNumber) {

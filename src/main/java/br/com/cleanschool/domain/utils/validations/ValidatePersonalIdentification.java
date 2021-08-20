@@ -1,4 +1,4 @@
-package school.validations;
+package br.com.cleanschool.domain.utils.validations;
 
 import java.util.InputMismatchException;
 

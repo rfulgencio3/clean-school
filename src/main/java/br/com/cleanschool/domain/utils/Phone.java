@@ -1,7 +1,6 @@
-package school;
+package br.com.cleanschool.domain.utils;
 
-import school.validations.ValidatePersonalIdentification;
-import school.validations.ValidatePhone;
+import br.com.cleanschool.domain.utils.validations.ValidatePhone;
 
 public class Phone {
 
@@ -15,5 +14,13 @@ public class Phone {
         }
         this.phonePrefix = phonePrefix;
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getPhonePrefix() {
+        return this.phonePrefix;
+    }
+
+    public String getPhoneNumber() {
+        return this.phoneNumber;
     }
 }
