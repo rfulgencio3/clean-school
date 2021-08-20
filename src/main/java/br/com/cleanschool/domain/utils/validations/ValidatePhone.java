@@ -1,5 +1,8 @@
 package br.com.cleanschool.domain.utils.validations;
 
+import br.com.cleanschool.domain.utils.exceptions.CustomExceptions;
+import br.com.cleanschool.domain.utils.exceptions.enums.ErrorCodes;
+
 public class ValidatePhone {
     public static boolean isValidPhone(String phonePrefix, String phoneNumber) {
         if (phonePrefix.length() == 2 && (phoneNumber.length() >= 8 || phoneNumber.length() <= 9)){
@@ -17,6 +20,6 @@ public class ValidatePhone {
         return("(" + phonePrefix.substring(0, 2) + ")" + " " + phoneNumber.substring(0, 5) + "-" +
                     phoneNumber.substring(5, 9));
         }
-        throw new IllegalArgumentException("Invalid phone number format");
+        throw new CustomExceptions(ErrorCodes.INVALID_PHONE_NUMBER_FORMAT, "Invalid phone number format");
     }
 }
