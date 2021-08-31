@@ -3,6 +3,7 @@ package br.com.cleanschool.domain.student;
 import br.com.cleanschool.domain.utils.Email;
 import br.com.cleanschool.domain.utils.PersonalIdentification;
 import br.com.cleanschool.domain.utils.Phone;
+import br.com.cleanschool.domain.utils.exceptions.CustomExceptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,9 @@ public class Student {
     }
 
     public void insertPhone(String phonePrefix, String phoneNumber){
+        if (phones.size() == 2){
+            throw new IllegalArgumentException("Maximum number of phones exceeded.");
+        }
         this.phones.add(new Phone(phonePrefix, phoneNumber));
     }
 
